@@ -1,3 +1,10 @@
+JAVASCRIPT ASSIGNMENT 1
+
+INSTRUCTIONS:
+For each question, add the appropriate button(s) and script code so that you can accomplish the requirements of the question.
+Each question has its own in-line location of writing scripts.
+
+
 ----------------------------------------1st Question ------------------------------------------- 
 Question 1:  The user will enter two numbers and click a button to show the result of the indicated
 calculation. You should have a button for each: ADD, SUBTRACT, MULTIPLY and DIVIDE (Hint remember parseInt()------------------------------------------------------ 
