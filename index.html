@@ -3,9 +3,9 @@
 <html>
 
 <head>
-<!--Name:  YOUR NAME HERE 
-	Date:
-	Course:
+<!--Name:  Hao Tian
+	Date: 2021/6/7
+	Course: CMP 621
 	Assignment:  JavaScript Assignment #1 -->
 <meta charset=utf-8 />
 
@@ -21,6 +21,51 @@ calculation.  (Hint remember parseInt().)  -------------------------------------
 
 <script>
 	//WRITE ALL OF YOUR JAVASCRIPT AND FUNCTIONS FOR QUESTION 1 HERE!!!!!!!!!!
+	
+	<!-- addition -->
+	function add(){
+	<!-- get numbers  -->
+	var x = document.getElementById("Num1Box").value;
+	var y = document.getElementById("Num2Box").value;
+	
+	var result = parseInt(x) + parseInt(y);
+	document.getElementById("result").value=result;
+	};
+	
+	<!-- subtraction -->
+	function sub(){
+	<!-- get numbers  -->
+	var x = document.getElementById("Num1Box").value;
+	var y = document.getElementById("Num2Box").value;
+	
+	var result = parseInt(x) - parseInt(y);
+	document.getElementById("result").value=result;
+	};
+	
+	<!-- multiplication -->
+	function mul(){
+	<!-- get numbers  -->
+	var x = document.getElementById("Num1Box").value;
+	var y = document.getElementById("Num2Box").value;
+	
+	var result = parseInt(x) * parseInt(y);
+	document.getElementById("result").value=result;
+	};
+	
+	<!-- division -->
+	function div(){
+	<!-- get numbers  -->
+	var x = document.getElementById("Num1Box").value;
+	var y = document.getElementById("Num2Box").value;
+	
+	var result = parseInt(x) / parseInt(y);
+	document.getElementById("result").value=result;
+	};
+	
+	
+	
+	
+	
 </script>
 
 
@@ -35,10 +80,21 @@ calculation.  (Hint remember parseInt().)  -------------------------------------
 	<br>
 	2nd Number: <input type="text" id="Num2Box">
 	<br>
+	<!-- result box -->
+	Result:<input type="text" id="result">
+	<br>
+	<!-- calculation buttons -->
+	<button type="button" name="button"  onclick="add()">Addition</button>
+	
+	<button type="button" name="button"  onclick="sub()">Subtraction</button>
+	
+	<button type="button" name="button"  onclick="mul()">Multiplication</button>
+	
+	<button type="button" name="button"  onclick="div()">Division</button>
 
 	<br>
 	<br>
-
+	<br>
 
 
 
@@ -47,6 +103,22 @@ Question 2:  The use will enter two numbers and click a button show state which 
 
 <script>
 //WRITE ALL OF YOUR JAVASCRIPT AND FUNCTIONS FOR QUESTION 2 HERE!!!!!!!!!!  ----------------------
+	function compare(){
+	a = document.getElementById("Num3Box").value;
+	b = document.getElementById("Num4Box").value;
+	if (a>b){ 
+	document.getElementById("Gnumber").value= a;
+	}
+	
+	else if (a<b){
+	document.getElementById("Gnumber").value= b;
+	
+	}
+	
+	else{
+	document.getElementById("Gnumber").value="Equal Number";
+	}
+	}
 </script>
 
 
@@ -62,8 +134,9 @@ Question 2:  The use will enter two numbers and click a button show state which 
 	<br>
 	2nd Number: <input type="text" id="Num4Box">
 	<br>
-
+	Greater Number:<input type="text" id="Gnumber">
 	<br>
+	<button type="button" name="button"  onclick="compare()">Click to compare</button>
 	<br>
 
 <!-- ----------------------------------------3rd Question -------------------------------------------
