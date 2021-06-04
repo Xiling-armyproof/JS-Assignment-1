@@ -146,7 +146,14 @@ clicked once more it will return to it's original state (yellow background, etc.
 
 <script>
 //WRITE ALL OF YOUR JAVASCRIPT AND FUNCTIONS FOR QUESTION 3 HERE!!!!!!!!!!  ----------------------
+ function change() {
+        img = document.getElementById("Q3");
+		alert(img)
+		img.style.background="red";
+		
+      };
 </script>
+
 
 
 <!-- Keep the "body" of Question 3 beneath here ------------------------------------ -->
@@ -157,7 +164,7 @@ clicked once more it will return to it's original state (yellow background, etc.
     If the button is clicked once more it will return to it's original state (yellow background, etc.). </p>
 	<br>
 	<div id="Q3" style="font-size:8pt; background-color:yellow; " >Here is some text.</div>
-
+	<button type="button" name="button"  onclick="change()">Click to change</butt
 </body>
 
 </html>
